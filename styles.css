@@ -1,0 +1,148 @@
+body {
+    background: #F7EFE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background-color: #A5D6A7;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid #8ebc8f;
+    text-align: center; 
+    border-radius: 8px;
+    display: block;
+}
+
+h2, label, p {
+    color: white;
+    margin: 8px 0;
+}
+
+input {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #f9ead8; 
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    background: #72a773;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #4e714f; 
+}
+
+#city-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#temp-div p {
+    margin-top: -30px;
+    font-size: 60px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    display: none;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+}
+
+#hourly-forecast {
+    margin-top: 20px;
+    padding: 10px 0;
+    gap: 15px;
+    scrollbar-width: thin;
+    scrollbar-color:rgba(255, 255, 255, 0.5) transparent; ;
+    justify-content: space-between;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+#hourly-forecast::-webkit-scrollbar {
+    height: 8px;
+}
+
+#hourly-forecast::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+.hourly-item {
+    color: white;
+    margin-right: 10px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 80px;
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #f5dbbb;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+footer a {
+    color: #72a773;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
